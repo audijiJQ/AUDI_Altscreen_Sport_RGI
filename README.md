@@ -29,3 +29,58 @@
 
 6.后改2.5主机不能自动启动更新 两指并拢按屏幕右上角进入工程模式后 升级提示"Variant mismatch" "M3P-H-ML-CN-AU-XJB-AL"这是主机卖家篡改了设备名称禁止正常更新
 把升级文件夹“Data"，拷贝到U盘，再把"后改2.5主机不能升级定制Meta引导替换"文件夹中"Meta"拷贝到U盘，即可开始升级。
+---
+
+# English
+
+All Audi MHI2P CarPlay instrument-cluster projection solutions currently available in China were originally developed by me. My accounts on Douyin and Xianyu are named “Carplay”; my online names are AUDIJI and AUDIJIJQ.
+
+Large-scale unauthorized copying and commercial resale of my work has appeared across major platforms. Those involved include a leading vehicle-modification chain, a supposedly “official Audi” source of uncertain authenticity, and countless “flashing masters” reselling the data. There is even a well-known Volkswagen infotainment influencer who, after I explicitly told them not to open-source my data, used AI to reverse-engineer it and published it on GitHub while presenting it as their own in order to gain recognition.
+
+I have therefore made the latest complete version of the instrument-cluster CarPlay projection solution for Audi MH2P_AS systems available free of charge for everyone to use.
+
+Original development is not easy, and working through the night takes its toll. Countless nights were spent modifying, debugging, and resolving issues. Success was not achieved overnight.
+
+This latest release fixes connection timeouts and stalls during cold starts. It also removes the per-device `mmx_challenge` binding and is distributed as a universal installation package.
+
+After extracting the archive, the `Meta` and `Data` directories contain the latest projection package. The remaining directories contain supporting tools. All projection packages and toolkits available online were originally developed and produced by me.
+
+**Prepare a USB drive or SD card smaller than 32 GB and format it as FAT32.**
+
+**Prepare a USB drive or SD card smaller than 32 GB and format it as FAT32.**
+
+**Prepare a USB drive or SD card smaller than 32 GB and format it as FAT32.**
+
+## 1. New installation
+
+Copy the `Data` and `Meta` directories to the USB drive.
+
+After the vehicle head unit has fully started, insert the USB drive and wait for the update to complete automatically.
+
+The system will restart several times during installation. Watch the center display until a message beginning with “Insert update medium” appears. This indicates that installation is complete. Remove the USB drive, then press the volume/power control to exit automatically.
+
+## 2. Vehicles with the oldest first-generation screen-mirroring version installed
+
+First complete the new-installation procedure above. Then copy the two autorun scripts from the `安装二代后卸载一代` directory to the USB drive. After the head unit starts, insert the USB drive. When the screen goes black after a few seconds, remove the USB drive immediately. The old mirroring version is then uninstalled.
+
+## 3. Vehicles retrofitted with a third-generation instrument cluster and the old first-generation mirroring solution
+
+If the instrument-cluster media and map display no longer work after installing the latest second-generation version and uninstalling the mirroring version, copy the three files from the `安装二代卸载一代后修复仪表地图媒体显示` directory to the USB drive. After the head unit starts, insert the USB drive. When the screen goes black after a few seconds, remove the USB drive immediately to complete the repair.
+
+## 4. Vehicles with the first second-generation basic version installed
+
+This applies to the basic projection version that does not support centered display of the Chinese character “厂” and has no RGI information card.
+
+Copy the two autorun scripts from the `二代基础版投屏卸载` directory to the USB drive. After the head unit starts, insert the USB drive. When the screen goes black after a few seconds, remove the USB drive immediately. The basic projection version is then uninstalled. Next, follow the new-installation procedure in Section 1 to install the latest version.
+
+## 5. Vehicles with an earlier RGI information-card version installed
+
+This applies to an earlier release that includes RGI information cards but suffers from connection timeouts or stalls.
+
+Copy the two autorun scripts from the `二代RGI版卸载` directory to the USB drive. After the head unit starts, insert the USB drive. When the screen goes black after a few seconds, remove the USB drive immediately. The earlier projection version is then uninstalled. Next, follow the new-installation procedure in Section 1 to install the latest version.
+
+## 6. Retrofitted 2.5 head units that cannot start the update automatically
+
+If pinching two fingers together in the upper-right corner of the screen to enter engineering mode produces the update errors “Variant mismatch” and “M3P-H-ML-CN-AU-XJB-AL”, the head-unit seller has modified the device name and prevented normal updates.
+
+Copy the update package's `Data` directory to the USB drive. Then copy the `Meta` directory from `后改2.5主机不能升级定制Meta引导替换` to the USB drive. The update can then be started.
